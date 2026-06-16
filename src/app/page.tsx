@@ -1,24 +1,11 @@
 import Link from "next/link";
-import { Shield, Key, Terminal, Cpu, ArrowRight, Lock, Code, FlagTriangleRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 export const metadata = {
   title: "Cyber Congress | AISG46",
   description: "The prestigious cybersecurity society of Amity International School, Gurugram Sector 46",
 };
 
-const WhatWeDo = [
-  {
-    icon: <FlagTriangleRight className="w-6 h-6 text-white/80" />,
-    title: "Patricipate in CTF hunts and competitions",
-    description: "We participate in CTF hunts and competitions to test our skills and knowledge in cybersecurity. and win awards."
-  },
-  {
-    icon: <Shield className="w-6 h-6 text-white/80" />,
-    title: "Manage our school's reputation on social media.",
-    description: "We manage our school's reputation on social media to promote cybersecurity awareness."
-  },
-
-];
 
 export default function HomePage() {
   return (
