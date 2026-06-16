@@ -1,12 +1,57 @@
+import Link from "next/link";
+import { Shield, Key, Terminal, Cpu, ArrowRight, Lock, Code, FlagTriangleRight } from "lucide-react";
+
+export const metadata = {
+  title: "Cyber Congress | AISG46",
+  description: "The prestigious cybersecurity society of Amity International School, Gurugram Sector 46",
+};
+
+const WhatWeDo = [
+  {
+    icon: <FlagTriangleRight className="w-6 h-6 text-white/80" />,
+    title: "Patricipate in CTF hunts and competitions",
+    description: "We participate in CTF hunts and competitions to test our skills and knowledge in cybersecurity. and win awards."
+  },
+  {
+    icon: <Shield className="w-6 h-6 text-white/80" />,
+    title: "Manage our school's reputation on social media.",
+    description: "We manage our school's reputation on social media to promote cybersecurity awareness."
+  },
+
+];
+
 export default function HomePage() {
   return (
-    <main className="p-8">
-      <h1 className="text-3xl font-bold">
-        Cyber Congress
-      </h1>
-      <p className="mt-2 text-slate-400">
-        Welcome to the prestigious cyber security society.
-      </p>
+    <main className="relative min-h-screen pb-20 ">
+      
+      <section className="max-w-6xl mx-auto px-6 pt-16 md:pt-24 text-center space-y-8">
+      
+        {/* main heading part */}
+        <div className="space-y-4 max-w-4xl mx-auto">
+          <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight text-white font-mono uppercase">
+            CYBER CONGRESS
+          </h1>
+          <p className="text-base md:text-lg text-white/60 font-mono max-w-4xl mx-auto ">
+            The prestigious cybersecurity society dedicated to promoting cybersecurity awareness, security research, and events at Amity International School, Gurugram Sector 46.
+          </p>
+        </div>
+
+        {/* buttons */}
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
+          <Link
+            href="/resources"
+            className="group px-6 py-3 rounded-xl bg-white text-black font-mono text-sm font-bold flex items-center gap-2 hover:bg-white/90 hover:shadow-[0_0_20px_rgba(255,255,255,0.2)] transition-all duration-300 w-full sm:w-auto justify-center">
+            Start Learning
+            <ArrowRight className="w-4 h-4 group-hover:translate-x-2 transition-transform" />
+          </Link>
+          <Link
+            href="/team"
+            className="px-6 py-3 rounded-xl bg-white/[0.03] border border-white/10 text-white font-mono text-sm font-semibold hover:border-white/30 hover:bg-white/[0.06] transition-all duration-300 w-full sm:w-auto justify-center"
+          >
+            Meet the Team
+          </Link>
+        </div>
+      </section>
     </main>
   );
 }
