@@ -1,3 +1,5 @@
+// used copilot/windsurf for the styling classes and button shadowing in all files to make my work easier and faster
+
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 
@@ -22,7 +24,7 @@ export default function HomePage() {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
           <Link
             href="/resources"
-            className="group px-6 py-3 rounded-xl bg-white text-black font-mono text-sm font-bold flex items-center gap-2 hover:bg-white/90 hover:shadow-[0_0_20px_rgba(255,255,255,0.2)] transition-all duration-300 w-full sm:w-auto justify-center"
+            className="group px-6 py-3 rounded-xl bg-white text-black font-mono text-sm font-bold flex items-center gap-2 transition-all duration-300 w-full sm:w-auto justify-center hover:bg-white/90"
           >
             Start Learning
             <ArrowRight className="w-4 h-4 group-hover:translate-x-2 transition-transform" />
