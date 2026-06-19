@@ -1,3 +1,3 @@
 ## IN PROGRESS
 
-## ~coming soon~
+coming soon
