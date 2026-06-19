@@ -17,7 +17,7 @@ export default function HomePage() {
             CYBER CONGRESS
           </h1>
           <p className="text-base md:text-lg text-white/60 font-mono">
-            The prestigious cybersecurity society dedicated to promoting cybersecurity awareness, security research, and events at Amity International School, Gurugram Sector 46.
+            The prestigious cybersecurity society dedicated to promoting cybersecurity awareness, training and events at Amity International School, Gurugram Sector 46.
           </p>
         </div>
 
