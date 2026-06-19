@@ -6,28 +6,24 @@ export const metadata = {
   description: "The prestigious cybersecurity society of Amity International School, Gurugram Sector 46",
 };
 
-
 export default function HomePage() {
   return (
-    <main className="relative min-h-screen pb-20 ">
-      
+    <main className="relative h-screen overflow-hidden">
       <section className="max-w-6xl mx-auto px-6 pt-16 md:pt-24 text-center space-y-8">
-      
-        {/* main heading part */}
         <div className="space-y-4 max-w-4xl mx-auto">
-          <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight text-white font-mono uppercase">
+          <h1 className="text-5xl md:text-7xl font-extrabold tracking-tight text-white font-mono">
             CYBER CONGRESS
           </h1>
-          <p className="text-base md:text-lg text-white/60 font-mono max-w-4xl mx-auto ">
+          <p className="text-base md:text-lg text-white/60 font-mono">
             The prestigious cybersecurity society dedicated to promoting cybersecurity awareness, security research, and events at Amity International School, Gurugram Sector 46.
           </p>
         </div>
 
-        {/* buttons */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
           <Link
             href="/resources"
-            className="group px-6 py-3 rounded-xl bg-white text-black font-mono text-sm font-bold flex items-center gap-2 hover:bg-white/90 hover:shadow-[0_0_20px_rgba(255,255,255,0.2)] transition-all duration-300 w-full sm:w-auto justify-center">
+            className="group px-6 py-3 rounded-xl bg-white text-black font-mono text-sm font-bold flex items-center gap-2 hover:bg-white/90 hover:shadow-[0_0_20px_rgba(255,255,255,0.2)] transition-all duration-300 w-full sm:w-auto justify-center"
+          >
             Start Learning
             <ArrowRight className="w-4 h-4 group-hover:translate-x-2 transition-transform" />
           </Link>
